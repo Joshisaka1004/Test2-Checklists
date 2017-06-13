@@ -10,9 +10,12 @@ import UIKit
 
 class AddingRowsItems: UIViewController {
 
+    @IBOutlet weak var RowsToBeAdded: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBAction func save(_ sender: UIButton) {
+    }
 }

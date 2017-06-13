@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" rowHeight="44" id="X0t-n2-XDA" customClass="myCell" customModule="Checklists_170611" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" rowHeight="44" id="X0t-n2-XDA">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X0t-n2-XDA" id="ouB-B5-0iv">
@@ -65,18 +65,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your To-Do-Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0I-Jh-Ssa">
-                                <rect key="frame" x="78" y="141" width="220" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your To-Do-Item below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0I-Jh-Ssa">
+                                <rect key="frame" x="77.5" y="100" width="220" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="VX7-9b-574"/>
-                                    <constraint firstAttribute="height" constant="34" id="gPd-mW-Gz9"/>
+                                    <constraint firstAttribute="height" constant="80" id="gPd-mW-Gz9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aa-d7-RIj">
-                                <rect key="frame" x="38" y="199" width="300" height="35"/>
+                                <rect key="frame" x="37.5" y="204" width="300" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="E4a-Zv-Cu8"/>
                                     <constraint firstAttribute="width" constant="300" id="v2V-0S-MEY"/>
@@ -85,19 +85,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqN-e4-2Ec">
+                                <rect key="frame" x="127" y="283" width="120" height="45"/>
+                                <color key="backgroundColor" red="0.38766938708507914" green="0.46487505443800958" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="kWu-hE-IQD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
+                                <state key="normal" title="Save!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="HcR-fa-VZm" eventType="touchUpInside" id="Iab-iD-eSf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93550459523457552" blue="0.24127418040445081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4aa-d7-RIj" firstAttribute="centerX" secondItem="a6S-jy-iLw" secondAttribute="centerX" id="AmQ-VE-jNc"/>
                             <constraint firstItem="d0I-Jh-Ssa" firstAttribute="centerX" secondItem="a6S-jy-iLw" secondAttribute="centerX" id="HPo-sk-wCQ"/>
+                            <constraint firstItem="XqN-e4-2Ec" firstAttribute="top" secondItem="4aa-d7-RIj" secondAttribute="bottom" constant="44" id="HQv-za-9BA"/>
+                            <constraint firstItem="XqN-e4-2Ec" firstAttribute="centerX" secondItem="a6S-jy-iLw" secondAttribute="centerX" id="PVx-ex-88z"/>
                             <constraint firstItem="4aa-d7-RIj" firstAttribute="top" secondItem="d0I-Jh-Ssa" secondAttribute="bottom" constant="24" id="aBS-Ul-luw"/>
-                            <constraint firstItem="d0I-Jh-Ssa" firstAttribute="top" secondItem="yvY-es-oyg" secondAttribute="bottom" constant="77" id="xX7-gI-ZoU"/>
+                            <constraint firstItem="d0I-Jh-Ssa" firstAttribute="top" secondItem="yvY-es-oyg" secondAttribute="bottom" constant="36" id="xX7-gI-ZoU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="RowsToBeAdded" destination="4aa-d7-RIj" id="NX8-hc-yrc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZu-Am-jAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725.5999999999999" y="151.57421289355324"/>
+            <point key="canvasLocation" x="1839" y="151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WMS-Zi-Cli">
