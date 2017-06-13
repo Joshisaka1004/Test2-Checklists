@@ -15,6 +15,7 @@
 		3B0A9AF11EED82D800E50422 /* Checklists_170611Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A9AF01EED82D800E50422 /* Checklists_170611Tests.swift */; };
 		3B0A9AFC1EED82D800E50422 /* Checklists_170611UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A9AFB1EED82D800E50422 /* Checklists_170611UITests.swift */; };
 		3B34EF311EEE9B42004015A9 /* ChecklistItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34EF301EEE9B42004015A9 /* ChecklistItems.swift */; };
+		3BC274701EEFEACA004ED54B /* AddingRowsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2746F1EEFEACA004ED54B /* AddingRowsItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B0A9AFB1EED82D800E50422 /* Checklists_170611UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklists_170611UITests.swift; sourceTree = "<group>"; };
 		3B0A9AFD1EED82D800E50422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B34EF301EEE9B42004015A9 /* ChecklistItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItems.swift; sourceTree = "<group>"; };
+		3BC2746F1EEFEACA004ED54B /* AddingRowsItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingRowsItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3B0A9ADD1EED82D800E50422 /* ChecklistViewController.swift */,
 				3B34EF301EEE9B42004015A9 /* ChecklistItems.swift */,
 				3B0A9ADF1EED82D800E50422 /* Main.storyboard */,
+				3BC2746F1EEFEACA004ED54B /* AddingRowsItems.swift */,
 				3B0A9AE21EED82D800E50422 /* Assets.xcassets */,
 				3B0A9AE41EED82D800E50422 /* LaunchScreen.storyboard */,
 				3B0A9AE71EED82D800E50422 /* Info.plist */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC274701EEFEACA004ED54B /* AddingRowsItems.swift in Sources */,
 				3B0A9ADE1EED82D800E50422 /* ChecklistViewController.swift in Sources */,
 				3B34EF311EEE9B42004015A9 /* ChecklistItems.swift in Sources */,
 				3B0A9ADC1EED82D800E50422 /* AppDelegate.swift in Sources */,
