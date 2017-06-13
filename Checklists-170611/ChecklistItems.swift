@@ -12,7 +12,7 @@ class ChecklistItems {
     var texte =  [String]()
     var checkers = [Bool]()
     init() {
-        texte = ["Gehe mit dem Hund spazieren", "Zähne putzen", "Lerne iOS-App-Entwicklung", "Löse Sudoku-Rätsel", "Krankenkassenanträge stellen"]
+        texte = ["Sudoku", "Kakuro", "Hakyuu", "Nurikabe", "Battleships"]
         for _ in 0..<texte.count {
             checkers.append(false)
         }
