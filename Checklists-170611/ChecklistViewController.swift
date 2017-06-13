@@ -50,5 +50,8 @@ class ChecklistViewController: UITableViewController {
             meineZelle.accessoryType = .checkmark
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 }
 

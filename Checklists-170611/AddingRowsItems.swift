@@ -17,5 +17,13 @@ class AddingRowsItems: UIViewController {
     }
 
     @IBAction func save(_ sender: UIButton) {
+        if let myText = RowsToBeAdded.text {
+            let eingabeTemp = myText.trimmingCharacters(in: .whitespaces)
+            let eingabe = eingabeTemp.uppercased()
+            print("Hallo, deine zugefügte Reihe heißt \(eingabe)")
+            myCheckListItems.texte.append(eingabe)
+            myCheckListItems.checkers.append(false)
+            navigationController?.popViewController(animated: true)
+        }
     }
 }
