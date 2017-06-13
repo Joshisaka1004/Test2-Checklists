@@ -41,7 +41,9 @@
                             <outlet property="delegate" destination="y2v-S0-z49" id="ppH-Qo-tZU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklist" id="HA4-b1-j5j"/>
+                    <navigationItem key="navigationItem" title="Checklist" id="HA4-b1-j5j">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="efC-H1-7rP"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dv6-Ia-6Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
